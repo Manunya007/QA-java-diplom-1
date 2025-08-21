@@ -39,7 +39,7 @@ public class BurgerPriceTest {
         burger = new Burger();
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Стоимость булочки: {0}, Наличие ингредиентов: {1}, Итоговая цена: {2}")
     public static Object[][] getTestData() {
         return new Object[][]{
                 {100f, Arrays.asList(50f, 30f), 280f},
